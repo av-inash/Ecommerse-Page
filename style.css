@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 300vh;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 20px;
+}
+.container h1{
+    font-size: 50px;
+}
+
+.tabs {
+    width: 80%;
+    height: 2%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #eee;
+    /* justify-content: center; */
+    align-items: center;
+}
+#men-tab:hover {
+    background-color: black;
+    color: white;
+    border-radius: 17px;
+}
+#women-tab:hover {
+    background-color: black;
+    color: white;
+    border-radius: 17px;
+}
+
+
+#kids-tab:hover {
+    background-color: black;
+    color: white;
+    border-radius: 17px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+       
+    }
+
+    .card-container {
+        flex-direction: column;
+       
+    }
+}
+
+.card {
+    width: 25%;
+    width: calc(25% - 20px);
+    
+    
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+    position: relative;
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        
+    }
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#title {
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    display: flex;
+    
+}
+
+.leftBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.rightBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.price {
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    display: flex;
+    
+    gap: 10px;
+    
+}
+
+.newprice {
+    width: 33.33%;
+    display: flex;
+}
+
+.oldprice {
+    width: 33.33%;
+    display: flex;
+}
+
+.discount {
+    width: 33.33%;
+    display: flex;
+    color: red;
+}
+.discount-badge {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    font-size: 12px;
+    
+    color: black;
+    background-color: #fff;
+    padding: 3px;
+    /* margin-bottom: 1px; */
+    margin-top: 7px;
+    margin-left: 8px;
+    border-radius: 2px;
+
+}
+
+#AddToCart {
+    width: 100%;
+    height: 12%;
+    background-color: rgb(2, 2, 28);
+    color: white;
+    position: absolute;
+    bottom: -21px;
+    border-radius: 10px;
+}
+
